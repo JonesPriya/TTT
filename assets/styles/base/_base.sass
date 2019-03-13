@@ -1,0 +1,34 @@
+body
+  margin: 0 !important
+  padding: 0
+  border: none
+  overflow-x: hidden
+  font-family: $font
+
+.page
+  min-height: 100vh
+  max-width: 100vw
+  overflow-x: hidden
+  section
+    .container
+      position: relative
+      max-width: $page-width-wide
+      overflow-x: hidden
+      margin: 0 auto
+      padding: $s*2 0
+      @media (max-width: $br-desktop-wide)
+        max-width: $page-width
+      @media (max-width: $br-tab-portrait)
+        padding: 0 $s*2
+      @media (max-width: $br-desktop-small)
+        padding: 0 $s*2
+
+
+ul
+  li
+    @include reset
+
+a
+  text-decoration: none
+  color: $white
+  cursor: pointer

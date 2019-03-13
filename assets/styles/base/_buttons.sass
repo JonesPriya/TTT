@@ -1,0 +1,33 @@
+@mixin btn($bg, $fg, $border)
+  background: $bg
+  color: $fg
+  border: 3px solid $border
+  border-radius: 5px
+  text-decoration: none
+  font-size: 1rem
+  cursor: pointer
+  padding: 0.6rem $s*2.05
+  
+  font-weight: 500
+  cursor: pointer
+  font-family: $font
+  > *
+    color: inherit !important
+
+.btn
+  @include btn($action-bg, $action-fg, $action-border)
+  border: 1px solid $white
+
+.btn-alt
+  @include btn($action-alt-bg, $action-alt-fg, $action-alt-border)
+  border: 1px solid $action-alt-border
+  &:hover
+    @include btn($action-alt-hover-bg, $action-alt-hover-fg, $action-alt-hover-border)
+
+
+.btn.btn-primary
+  @include btn($primary-action-bg, $primary-action-fg, $primary-action-border)
+  text-transform: uppercase
+  // height: 2.5rem
+  font-size: 0.8rem
+  // padding: $s/2 $s*1.5

@@ -1,0 +1,12 @@
+// typography mixins
+
+@mixin font($size-ratio: 0.3, $line-height-ratio: $size-ratio, $margin-ratio: $size-ratio)
+  @for $i from 1 through 6
+    h#{$i}
+      font-size: 0.9rem + $size-ratio * (6 - $i)
+      line-height: 1rem + $line-height-ratio * (6 - $i)
+      margin: (1rem + $margin-ratio * (6 - $i)) 0
+  p
+    font-size: 1rem
+    line-height: 1rem + $line-height-ratio
+    margin: (1rem + $margin-ratio) 0
