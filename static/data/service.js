@@ -26,7 +26,7 @@ export default [
   },
   {
     // icon: '04.png',
-    title: 'Platform development / CreateNow app development',
+    title: 'Platform development',
     description: 'Harness the power of ServiceNow\'s platform for your next development project and leave discussions around infrastructure, environment availability and performance in the past.'
   },
   {
