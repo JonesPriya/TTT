@@ -53,12 +53,14 @@ section.app-footer
           font-size: 1rem
           @media(max-width: $br-tab-portrait)
             margin-top: $s
+            font-size: 0.8rem
         span
           color: #ccc
           margin-left: $s*20
           @media(max-width: $br-tab-portrait)
             margin: 0 auto
             margin-top: $s
+            font-size: 0.7rem
     .s-links
       margin-top: $s
       a

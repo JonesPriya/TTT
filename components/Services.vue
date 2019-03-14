@@ -37,8 +37,10 @@ export default {
       width: 100%
       text-align: left
     h1
+      padding-top: $s*2
       @media (max-width: $br-tab-portrait)
         margin-bottom: $s
+        font-size: 1.5rem
 
     p
       margin-bottom: $s*3
@@ -48,7 +50,7 @@ export default {
   @include flex(center, center)
   flex-wrap: wrap
   align-items: flex-start
-  margin-bottom: $s*3
+  margin-bottom: $s
   @media (max-width: $br-tab-portrait)
     display: block
   .content
@@ -59,11 +61,14 @@ export default {
     @media (max-width: $br-tab-portrait)
       max-width: 100%
       padding: 0
+      h4
+        font-size: 1rem
       p
         width: 100%
     p
       margin-top: $s*2
       line-height: 1.5rem
+      font-size: 0.8rem
 
 
 
