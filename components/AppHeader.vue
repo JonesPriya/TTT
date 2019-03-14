@@ -4,7 +4,7 @@
     a.hamburger(@click="toggle()")
       menu-icon.icon(:open="show")
     navigation-d.desktop
-    navigation-m.mobile(:open="show")
+    navigation-m.mobile(:open="show", @clicked="toggle()")
 </template>
 
 <script>

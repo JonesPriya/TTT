@@ -4,14 +4,20 @@ nav.navigation
     nuxt-link.logo(to="/")
       img(src="~assets/images/logo.png")
   .secondary
+    a(v-scroll-to="'#primary-tout'") Home
     a(v-scroll-to="'#services'") Services
-    a AboutUs
-    nuxt-link(to="/Contact") Contact
+    a(v-scroll-to="'#about-us'") AboutUs
+    //- nuxt-link(to="/Contact") Contact
 </template>
 
 <script>
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
+import Vue from 'vue';
+var VueScrollTo = require('vue-scrollto');
+ 
+Vue.use(VueScrollTo)
 
 export default {
   created () {

@@ -2,10 +2,12 @@
 .navigation(:class="{open: open}")
   ul.primary
     li
-      nuxt-link(to="/Services") Services
+      a(v-scroll-to="'#primary-tout'", @click="clicked") Home
     li
-      nuxt-link(to="/AboutUs") AboutUs
+      a(v-scroll-to="'#services'", @click="clicked") Services
     li
+      a(v-scroll-to="'#about-us'", @click="clicked") AboutUs
+    //- li
       nuxt-link(to="/Contact") Contact
 </template>
 
@@ -22,7 +24,9 @@ export default {
     }
   },
   methods: {
-
+    clicked () {
+      this.$emit('clicked')
+    }
   },
   components: {
     MenuIcon
@@ -53,7 +57,7 @@ export default {
 
 .primary
   @include reset
-  margin-top: 12rem
+  margin-top: $s*6
   text-align: center
 
 li
