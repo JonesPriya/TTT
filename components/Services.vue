@@ -7,7 +7,7 @@ section#services
       .details
         .content(v-for="s, i in service", :key="i")
           //- .thumb()
-            img(:src="getIcon(f.icon)", :class="feature.class")
+            img(:src="getIcon(s.icon)", :class="service.class")
           h4 {{ s.title }}
           p {{ s.description }}
 </template>
@@ -19,7 +19,12 @@ export default {
     return {
       service: service
     }
-  }
+  },
+  // methods: {
+  //   getIcon (icon) {
+  //     return require('../../assets/images' + icon )
+  //   }
+  // }
 }
 </script>
 
