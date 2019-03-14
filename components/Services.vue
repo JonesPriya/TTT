@@ -36,6 +36,7 @@ export default {
     @media (max-width: $br-tab-portrait)
       width: 100%
       text-align: left
+      margin: $s*3 0
     h1
       padding-top: $s*2
       @media (max-width: $br-tab-portrait)
@@ -55,7 +56,6 @@ export default {
     display: block
   .content
     max-width: 33.33%
-    margin-bottwom: $s*2
     padding: $s*1.5
     text-align: center
     @media (max-width: $br-tab-portrait)

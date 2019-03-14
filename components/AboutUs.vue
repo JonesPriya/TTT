@@ -33,7 +33,7 @@ section#about-us
     // margin: $s
     @media (max-width: $br-tab-portrait)
       width: 100%
-      margin: $s*6 auto
+      margin: $s*4 auto
       h4
         @media (max-width: $br-tab-portrait)
           font-size: 1.2rem
