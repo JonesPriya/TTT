@@ -1,17 +1,21 @@
 <template lang="pug">
-.page.contact
-  .details
-    .name
-      label Your Name*: 
-      input(type="text", name="firstname", value=" ") 
-      
-    .mail
-    .message
+.page
+  app-header
+  c-hero
+  c-details
   
 </template>
 
 <script>
+import AppHeader from '~/components/AppHeader'
+import CHero from '~/components/contact/CHero'
+import CDetails from '~/components/contact/CDetails'
 export default {
+  components: {
+    AppHeader,
+    CHero,
+    CDetails
+  }
   
 }
 </script>
