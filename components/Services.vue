@@ -6,8 +6,8 @@ section#services
         p Our team of certified experts can help you with
       .details
         .content(v-for="s, i in service", :key="i")
-          //- .thumb()
-            img(:src="getIcon(s.icon)", :class="service.class")
+          .icon
+            img(:src="getImageurl(s.icon)")
           h4 {{ s.title }}
           p {{ s.description }}
 </template>
@@ -20,11 +20,11 @@ export default {
       service: service
     }
   },
-  // methods: {
-  //   getIcon (icon) {
-  //     return require('../../assets/images' + icon )
-  //   }
-  // }
+   methods: {
+    getImageurl (icon) {
+      return require('../assets/images/' + icon)
+    }
+  }
 }
 </script>
 
@@ -70,18 +70,12 @@ export default {
         font-size: 1rem
       p
         width: 100%
+      .icon
+        padding: $s/4
+
     p
       margin-top: $s*2
       line-height: 1.5rem
       font-size: 0.8rem
-
-
-
-
-// .thumb
-//   width: 2rem
-//   img
-//     max-width: 100%
-
 
 </style>
