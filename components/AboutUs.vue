@@ -42,9 +42,6 @@ section#about-us
       font-size: 1.5rem
       width: 100%
 
-  p
-    color: $hm-neutral-dark
-
 </style>
 
 
