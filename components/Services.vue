@@ -1,15 +1,15 @@
 <template lang="pug">
 section#services
   .container
-      .heading
-        h1 Our services
-        p Our team of certified experts can help you with
-      .details
-        .content(v-for="s, i in service", :key="i")
-          .icon
-            img(:src="getImageurl(s.icon)")
-          h4 {{ s.title }}
-          p {{ s.description }}
+    .heading
+      h1 Our services
+      p Our team of certified experts can help you with
+    .details
+      .content(v-for="s, i in service", :key="i")
+        .icon
+          img(:src="getImageurl(s.icon)")
+        h4 {{ s.title }}
+        p {{ s.description }}
 </template>
 
 <script>
@@ -63,15 +63,25 @@ export default {
     max-width: 33.33%
     padding: $s*1.5
     text-align: center
+    position: relative
+    h4
+      margin-bottom: 1.6rem
+      margin-top: 2.5rem
+
     @media (max-width: $br-tab-portrait)
       max-width: 100%
-      padding: 0
+      padding: 1rem
       h4
         font-size: 1rem
       p
         width: 100%
-      .icon
-        padding: $s/4
+    .icon
+      @include absolute
+      img
+        width: 2.5rem
+        margin: 0 0 $s*3 0
+        @media (max-width: $br-tab-portrait)
+          margin-bottom: 3rem
 
     p
       margin-top: $s*2
