@@ -28,7 +28,7 @@ section#primary-tout
   // background-color: $hm-pink
   position: relative
   overflow: visible !important
-  background-image: url('~assets/images/bg.png')
+  background-image: url('~assets/images/bg.jpg')
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
