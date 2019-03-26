@@ -1,5 +1,6 @@
 <template lang="pug">
 section.c-hero
+  .mask
   .container
     .content
       h1 Contact Us
@@ -14,15 +15,19 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
 section.c-hero
-  // background-color: $hm-pink
+  position: relative
   overflow: visible !important
-  background-image: url('~assets/images/bg.png')
+  background-image: url('~assets/images/bg.jpg')
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
   height: 100vh
   @media (max-width: $br-tab-portrait)
     height: 75vh
+  
+  .mask
+    background-color: rgba($tt-neutral-dark, 0.7)
+    @include absolute
 
 .container
   overflow: visible !important
@@ -30,17 +35,17 @@ section.c-hero
     position: relative
     @include flex
     overflow: visible !important
-    height: 18rem
+    height: 30rem
     justify-content: unset
     padding: 0 $s*2
 .content
-  color: #000
+  color: #fff
   margin-top: $s*14
   width: 100%
   text-align: center
   @media(max-width: $br-tab-portrait)
     width: 100%
-    height: 20rem
+    height: 32rem
   h1
     margin-top: $s*5
     @media(max-width: $br-tab-portrait)

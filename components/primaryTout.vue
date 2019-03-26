@@ -25,7 +25,6 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
 section#primary-tout
-  // background-color: $hm-pink
   position: relative
   overflow: visible !important
   background-image: url('~assets/images/bg.jpg')
@@ -37,7 +36,7 @@ section#primary-tout
     height: 75vh
   
   .mask
-    background-color: rgba($hm-neutral-dark, 0.7)
+    background-color: rgba($tt-neutral-dark, 0.7)
     @include absolute
 
 .container
