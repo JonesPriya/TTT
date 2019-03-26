@@ -55,6 +55,16 @@ export default {
       @media (max-width: $br-tab-portrait)
         margin-bottom: $s
         font-size: 1.5rem
+    
+    ::before
+      @include absolute-n
+      top: 10rem
+      content: " "
+      height: 0.1rem
+      width: 4rem
+      border: 1px solid $tt-primary-color
+      border-radius: 5rem
+      opacity: 0.3
 
     p
       margin-bottom: $s*3
