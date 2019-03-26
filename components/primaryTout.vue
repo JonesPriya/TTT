@@ -4,7 +4,7 @@ section#primary-tout
   .container
     .content
       h1(data-aos="fade-up") ServiceNow
-      p(data-aos="fade-up") your preferred service management specialists
+      h4(data-aos="fade-up") your preferred service management specialists
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
 section#primary-tout
   position: relative
   overflow: visible !important
-  background-image: url('~assets/images/bg.jpg')
+  background-image: url('~assets/images/ttt-bg.jpg')
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
@@ -49,7 +49,7 @@ section#primary-tout
     justify-content: unset
     padding: 0 $s*2
 .content
-  color: #fff
+  color: $tt-secondary-color
   margin-top: $s*14
   width: 100%
   text-align: center
@@ -62,9 +62,9 @@ section#primary-tout
       font-size: 1.5rem !important
       margin-top: $s*5
       margin-bottom: $s
-  p
+  h4
     margin-bottom: $s*4
-    color: #fff
+    color: $tt-secondary-color
     line-height: 1.55rem
     text-transform: uppercase
 
