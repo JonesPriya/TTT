@@ -6,14 +6,16 @@ section#services
       p Our team of certified experts can help you with
     .details
       .content(v-for="s, i in service", :key="i")
-        .icon
+        .icon()
           img(:src="getImageurl(s.icon)")
         h4 {{ s.title }}
         p {{ s.description }}
+      //- view-services(@toggle="toggle()")
 </template>
 
 <script>
 import service from 'static/data/service.js'
+// import ViewServices from './ViewServices'
 export default {
   data () {
     return {
@@ -23,7 +25,13 @@ export default {
    methods: {
     getImageurl (icon) {
       return require('../assets/images/' + icon)
-    }
+    },
+//     toggle () {
+//       this.expanded = !this.expanded
+//     }
+//   },
+//   components: {
+//     ViewServices
   }
 }
 </script>
@@ -67,6 +75,8 @@ export default {
     h4
       margin-bottom: 1.6rem
       margin-top: 2.5rem
+      font-weight: 500
+      font-size: 1.1rem
 
     @media (max-width: $br-tab-portrait)
       max-width: 100%
@@ -77,9 +87,9 @@ export default {
         width: 100%
     .icon
       @include absolute
+      width: 2.5rem
       img
-        width: 2.5rem
-        margin: 0 0 $s*3 0
+        max-width: 100%
         @media (max-width: $br-tab-portrait)
           margin-bottom: 3rem
 
