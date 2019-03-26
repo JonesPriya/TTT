@@ -50,7 +50,7 @@ export default {
     height: 100vh
     opacity: 1
     transition: all 0.3s
-    background: $hm-neutral-dark
+    background: $tt-primary-color
     color: $white !important
     ul
       display: block

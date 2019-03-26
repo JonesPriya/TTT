@@ -30,7 +30,7 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
 section.app-footer
-  background: $hm-neutral-dark
+  background: $tt-primary-color
   .container
     position: relative
     display: block
@@ -49,13 +49,13 @@ section.app-footer
           margin: 0 auto
         p
           margin: 0 auto
-          color: #ccc
+          color: $white
           font-size: 1rem
           @media(max-width: $br-tab-portrait)
             margin-top: $s
             font-size: 0.8rem
         span
-          color: #ccc
+          color: $white
           margin-left: $s*20
           @media(max-width: $br-tab-portrait)
             margin: 0 auto

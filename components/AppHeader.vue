@@ -37,7 +37,7 @@ export default {
 
 .app-header
   @include fixed-n
-  background: $hm-neutral-dark
+  background: $white
   z-index: 4
   height: 5.5rem
   color: $white

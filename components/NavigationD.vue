@@ -42,6 +42,7 @@ a.logo
   position: relative
   a
     margin: 0 $s
+    color: $tt-secondary-color
 
 .secondary
   @media (max-width: $br-tab-portrait)

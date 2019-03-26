@@ -39,7 +39,7 @@ $icon-height: 1rem
     position: absolute
     height: 2px
     width: 100%
-    background: $white
+    background: $tt-secondary-color
     border-radius: 0.1rem
     opacity: 1
     left: 0
