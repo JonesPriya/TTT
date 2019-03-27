@@ -58,13 +58,15 @@ export default {
     
     ::before
       @include absolute-n
-      top: 10rem
+      top: $s*10
       content: " "
       height: 0.1rem
       width: 4rem
       border: 1px solid $tt-primary-color
       border-radius: 5rem
       opacity: 0.3
+      @media (max-width: $br-tab-portrait)
+        display: none
 
     p
       margin-bottom: $s*3

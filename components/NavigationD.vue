@@ -1,8 +1,9 @@
 <template lang="pug">
 nav.navigation
   .primary
-    nuxt-link.logo(to="/")
-      img(src="~assets/images/logo.png")
+    .logo
+      a.logo(v-scroll-to="'#primary-tout'")
+        img(src="~assets/images/logo.png")
   .secondary
     a(v-scroll-to="'#primary-tout'") Home
     a(v-scroll-to="'#services'") Services
@@ -33,18 +34,22 @@ export default {
 
 .navigation
   @include flex
-a.logo
-  @include flex
-  text-decoration: none
-  img
-    width: 10rem
-.secondary
-  position: relative
-  a
-    margin: 0 $s
-    color: $tt-secondary-color
+  a.logo
+    @include flex
+    text-decoration: none
+    color: $white
+    img
+      width: 10rem
+      @media (max-width: $br-desktop-small)
+        width: 10rem
+        margin-left: $s*1.8
+  .secondary
+    position: relative
+    a
+      margin: 0 $s
+      color: $tt-secondary-color
 
-.secondary
-  @media (max-width: $br-tab-portrait)
-    display: none
+  .secondary
+    @media (max-width: $br-tab-portrait)
+      display: none
 </style>

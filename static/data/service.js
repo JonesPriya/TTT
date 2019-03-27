@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 'interface',
-    icon: 'Interface.svg',
+    icon: 'Desktop & Mobile User Interfaces.svg',
     title: 'Desktop & Mobile User Interfaces',
     description: 'we have the expertise to brand and "theme" your instance of ServiceNow and user portal and extend the value of ServiceNow to the non - IT user by providing custom front - end interface for smartphones and tablets.'
   },
@@ -25,7 +25,7 @@ export default [
   },
   {
     id: 'report',
-    icon: 'Reporting.svg',
+    icon: 'Reporting & Dashboards.svg',
     title: 'Reporting & Dashboards',
     description: 'Leveraging out- of - cloud, custom developed or by leveraging ServiceNow\'s "Performance Analytics".'
   },
@@ -43,7 +43,7 @@ export default [
   },
   {
     id: 'ideation',
-    icon: 'Ideation.svg',
+    icon: 'Ideation & Demand Management.svg',
     title: 'Ideation & Demand Management',
     description: 'Consists of tools for capturing, centralizing and analyzing strategic and operational demands while also providing a single location for managing all of your organization\'s demand information.'
   },

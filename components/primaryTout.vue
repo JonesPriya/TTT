@@ -1,6 +1,6 @@
 <template lang="pug">
 section#primary-tout
-  .mask
+  //- .mask
   .container
     .content
       h1(data-aos="fade-up") ServiceNow
@@ -35,8 +35,8 @@ section#primary-tout
   @media (max-width: $br-tab-portrait)
     height: 75vh
   
-  .mask
-    background-color: rgba($tt-neutral-dark, 0.7)
+  // .mask
+    background-color: rgba($tt-primary-color, 0.5)
     @include absolute
 
 .container
@@ -52,7 +52,6 @@ section#primary-tout
   color: $tt-secondary-color
   margin-top: $s*14
   width: 100%
-  text-align: center
   @media(max-width: $br-tab-portrait)
     width: 100%
     height: 32rem
@@ -65,6 +64,7 @@ section#primary-tout
   h4
     margin-bottom: $s*4
     color: $tt-secondary-color
+    font-weight: 600
     line-height: 1.55rem
     text-transform: uppercase
 
