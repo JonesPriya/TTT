@@ -30,7 +30,7 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
 section.app-footer
-  background: $tt-primary-color
+  background: $tt-secondary-color
   .container
     position: relative
     display: block

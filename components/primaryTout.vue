@@ -27,7 +27,7 @@ export default {
 section#primary-tout
   position: relative
   overflow: visible !important
-  background-image: url('~assets/images/ttt-bg.jpg')
+  background-image: url('~assets/images/ttt-hero-banner.jpg')
   background-size: cover
   background-position: center center
   background-repeat: no-repeat
@@ -49,7 +49,7 @@ section#primary-tout
     justify-content: unset
     padding: 0 $s*2
 .content
-  color: $tt-secondary-color
+  color: $white
   margin-top: $s*14
   width: 100%
   @media(max-width: $br-tab-portrait)
@@ -63,10 +63,9 @@ section#primary-tout
       margin-bottom: $s
   h4
     margin-bottom: $s*4
-    color: $tt-secondary-color
+    color: $white
     font-weight: 600
     line-height: 1.55rem
-    text-transform: uppercase
 
 
 </style>
