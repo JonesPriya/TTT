@@ -1,11 +1,9 @@
 <template lang="pug">
 section#about-us
-  .container
+  .about
     .details
       h4 Enterprise Service Management
-      p Target Thought Technologies offers ServiceNow as a Platform Experience which can transform your business elevating it to new heights of efficiency by streamlining workflows and facilitating a service-oriented approach across your enterprise.
-      p We value quality over quantity so whether you're implementing ServiceNow for Enterprise Service, IT Operations Management or developing an app using the ServiceNow Platform, we take pride in being your most efficient, experienced and value-based option around.
-  
+      p Target Thought Technologies offers ServiceNow as a Platform Experience which can transform your business by streamlining workflows and facilitating service-oriented approach across your enterprise.We value quality over quantity. 
 </template>
 
 <script>
@@ -21,26 +19,26 @@ section#about-us
   background: $light-white
 
 //section
-.container
-  // padding-top: $s !important
+.about
+  padding-top: $s !important
   padding-bottom: $s*2 !important
-
+  width: 50%
+  margin: 0 auto
   @media (max-width: $br-tab-portrait)
+    margin: 0 auto
+    width: 100%
     display: inline-flex
 
 
   .details
-    // margin: $s
+    text-align: center
     @media (max-width: $br-tab-portrait)
       width: 100%
-      margin: $s*4 auto
+      margin-left: $s*4
+      margin-right: $s*4
       h4
         @media (max-width: $br-tab-portrait)
           font-size: 1.2rem
-  h2
-    @media (max-width: $br-desktop-small)
-      font-size: 1.5rem
-      width: 100%
 
 </style>
 

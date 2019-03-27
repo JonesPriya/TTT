@@ -57,6 +57,8 @@ section#primary-tout
     height: 32rem
   h1
     margin-top: $s*5
+    font-size: 3rem
+    font-weight: 500
     @media(max-width: $br-tab-portrait)
       font-size: 1.5rem !important
       margin-top: $s*5
@@ -64,8 +66,9 @@ section#primary-tout
   h4
     margin-bottom: $s*4
     color: $white
-    font-weight: 600
-    line-height: 1.55rem
+    font-weight: 500
+    font-size: 1rem
+    line-height: 0.55rem
 
 
 </style>

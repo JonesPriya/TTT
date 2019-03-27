@@ -48,7 +48,6 @@ export default {
     margin: 0 auto
     @media (max-width: $br-tab-portrait)
       width: 100%
-      text-align: left
       margin: $s*3 0
     h1
       padding-top: $s*2
@@ -66,7 +65,7 @@ export default {
       border-radius: 5rem
       opacity: 0.3
       @media (max-width: $br-tab-portrait)
-        display: none
+        top: $s*8
 
     p
       margin-bottom: $s*3
@@ -101,7 +100,7 @@ export default {
       @include absolute
       width: 2.5rem
       img
-        max-width: 100%
+        width: 2rem
         @media (max-width: $br-tab-portrait)
           margin-bottom: 3rem
 
