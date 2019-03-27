@@ -107,6 +107,5 @@ export default {
     p
       margin-top: $s*2
       line-height: 1.5rem
-      font-size: 0.8rem
 
 </style>
