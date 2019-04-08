@@ -6,9 +6,9 @@
     li
       a(v-scroll-to="'#services'", @click="clicked") Services
     li
-      a(v-scroll-to="'#about-us'", @click="clicked") About Us
-    li
       a(v-scroll-to="'#customers'", @click="clicked") Customer
+    li
+      a(v-scroll-to="'#about-us'", @click="clicked") About Us
     //- li
       nuxt-link(to="/Contact") Contact
 </template>

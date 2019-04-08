@@ -69,6 +69,8 @@ section#primary-tout
     font-weight: 500
     font-size: 1rem
     line-height: 0.55rem
+    @media(max-width: $br-tab-portrait)
+      line-height: 1.2rem
 
 
 </style>

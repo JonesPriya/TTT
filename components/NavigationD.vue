@@ -7,8 +7,8 @@ nav.navigation
   .secondary
     a(v-scroll-to="'#primary-tout'") Home
     a(v-scroll-to="'#services'") Services
-    a(v-scroll-to="'#about-us'") About Us
     a(v-scroll-to="'#customers'") Customer
+    a(v-scroll-to="'#about-us'") About Us
     //- nuxt-link(to="/Contact") Contact
 </template>
 
